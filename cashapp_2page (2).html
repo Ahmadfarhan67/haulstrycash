@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Claim Your $750 Cash App Reward</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --g:#00D632;
+  --bg:#0A0A0A;
+  --card:#131313;
+  --border:#1d1d1d;
+  --white:#fff;
+  --muted:#888;
+  --dim:#383838;
+}
+html,body{
+  background:var(--bg);
+  color:var(--white);
+  font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Segoe UI',Inter,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+}
+body{display:flex;justify-content:center;}
+
+/* ── SCREENS ── */
+.screen{
+  display:none;
+  width:100%;max-width:430px;min-height:100vh;
+  flex-direction:column;align-items:center;
+}
+.screen.active{
+  display:flex;
+  animation:fadeIn .38s ease both;
+}
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(10px)}
+  to{opacity:1;transform:none}
+}
+
+/* ── SHARED ── */
+.logo{display:flex;align-items:center;gap:10px;}
+.logo-name{font-size:20px;font-weight:600;letter-spacing:-.3px;}
+
+/* ════════════════ PAGE 1 ════════════════ */
+#s1{
+  padding:30px 22px 36px;
+  justify-content:space-between;
+}
+
+/* Badge */
+.s1-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#161616;
+  border:1px solid #282828;
+  border-radius:100px;
+  padding:7px 16px;
+  margin-bottom:26px;
+}
+.s1-dot{
+  width:7px;height:7px;
+  background:var(--g);
+  border-radius:50%;flex-shrink:0;
+}
+.s1-badge-txt{
+  font-size:10px;font-weight:800;
+  letter-spacing:2px;text-transform:uppercase;
+  color:#aaa;
+}
+
+/* Headline */
+.s1-h1{
+  font-size:42px;font-weight:900;
+  text-align:center;line-height:1.08;
+  letter-spacing:-.8px;margin-bottom:18px;
+}
+.s1-h1 em{color:var(--g);font-style:normal;}
+
+.s1-sub{
+  font-size:15px;color:var(--muted);
+  text-align:center;line-height:1.5;
+  margin-bottom:34px;
+}
+
+/* Buttons */
+.s1-btns{width:100%;display:flex;flex-direction:column;gap:10px;margin-bottom:14px;}
+
+.btn{
+  width:100%;border-radius:14px;
+  padding:18px 20px;
+  font-size:15px;font-weight:900;
+  letter-spacing:1.5px;text-transform:uppercase;
+  cursor:pointer;text-align:center;
+  border:none;
+  transition:opacity .15s,transform .1s;
+}
+.btn:active{transform:scale(.98);opacity:.85;}
+
+.btn-no{
+  background:var(--g);color:#000;
+  animation:glow 2.8s ease-in-out infinite;
+}
+@keyframes glow{
+  0%,100%{box-shadow:0 0 0 0 rgba(0,214,50,.3)}
+  50%{box-shadow:0 0 0 14px rgba(0,214,50,0)}
+}
+
+.btn-yes{
+  background:#181818;color:var(--white);
+  border:1px solid #2c2c2c;
+}
+
+.s1-fine{
+  font-size:10.5px;color:var(--dim);
+  letter-spacing:1.2px;text-transform:uppercase;
+  text-align:center;
+}
+
+.s1-mid{
+  display:flex;flex-direction:column;
+  align-items:center;
+  flex:1;justify-content:center;
+  padding:20px 0;
+}
+
+.foot{
+  padding-top:18px;
+  border-top:1px solid #181818;
+  width:100%;text-align:center;
+}
+.foot span{
+  font-size:10px;font-weight:800;
+  letter-spacing:3px;color:#2e2e2e;
+  text-transform:uppercase;
+}
+
+/* ════════════════ PAGE 2 ════════════════ */
+#s2{padding:36px 18px 52px;}
+
+.badge{
+  border:1.5px solid var(--g);
+  color:var(--g);
+  font-size:10px;font-weight:800;
+  letter-spacing:2px;text-transform:uppercase;
+  padding:5px 16px;border-radius:100px;
+  margin-bottom:22px;
+}
+
+#s2 h1{
+  font-size:38px;font-weight:900;
+  text-align:center;line-height:1.1;
+  letter-spacing:-.8px;margin-bottom:14px;
+}
+#s2 h1 em{color:var(--g);font-style:normal;}
+
+.sub{
+  font-size:15px;color:var(--muted);
+  text-align:center;line-height:1.55;
+  margin-bottom:30px;
+}
+.sub b{color:var(--white);}
+
+.steps{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:10px;width:100%;margin-bottom:22px;
+}
+.step{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:18px 15px 17px;
+  display:flex;flex-direction:column;gap:5px;
+  animation:fadeIn .55s ease both;
+}
+.step:nth-child(1){animation-delay:.06s}
+.step:nth-child(2){animation-delay:.12s}
+.step:nth-child(3){animation-delay:.18s}
+.step:nth-child(4){animation-delay:.24s}
+
+.num{
+  width:30px;height:30px;
+  background:var(--g);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:14px;font-weight:800;color:#000;
+  margin-bottom:8px;flex-shrink:0;
+}
+.stitle{font-size:14px;font-weight:800;line-height:1.25;}
+.sdesc{font-size:12px;color:var(--muted);line-height:1.4;}
+.slabel{font-size:11.5px;font-weight:700;color:var(--g);margin-top:4px;}
+
+.cta-wrap{width:100%;margin-bottom:11px;}
+.cta{
+  display:block;width:100%;
+  background:var(--g);color:#000;
+  border:none;border-radius:14px;
+  padding:18px 20px;
+  font-size:15px;font-weight:900;
+  letter-spacing:1.8px;text-transform:uppercase;
+  cursor:pointer;text-align:center;text-decoration:none;
+  transition:opacity .18s,transform .1s;
+  animation:glow 2.8s ease-in-out infinite;
+}
+.cta:active{transform:scale(.98);opacity:.88;}
+
+.cta-note{
+  font-size:12px;color:var(--dim);
+  text-align:center;margin-bottom:28px;
+}
+
+.proof{width:100%;}
+.stars-row{
+  display:flex;align-items:center;justify-content:center;
+  gap:8px;margin-bottom:14px;
+}
+.stars span{color:#FFB800;font-size:16px;}
+.rcount{font-size:13px;color:var(--muted);}
+
+.marquee-wrap{
+  width:100%;overflow:hidden;
+  mask-image:linear-gradient(to right,transparent 0%,black 8%,black 92%,transparent 100%);
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,black 8%,black 92%,transparent 100%);
+}
+.marquee-track{
+  display:flex;gap:10px;
+  width:max-content;
+  animation:ticker 38s linear infinite;
+}
+.marquee-track:hover{animation-play-state:paused;}
+@keyframes ticker{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-50%)}
+}
+.rcard{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:14px 13px;
+  width:165px;flex-shrink:0;
+}
+.rq{
+  font-size:12px;color:#ccc;
+  line-height:1.5;margin-bottom:8px;font-style:italic;
+}
+.ra{font-size:11px;color:var(--dim);}
+
+#s2 .foot{margin-top:36px;}
+</style>
+</head>
+<body>
+
+<!-- ═══════════ PAGE 1 ═══════════ -->
+<div class="screen active" id="s1">
+
+  <div class="logo">
+    <img src="data:image/webp;base64,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" alt="Cash App" style="width:42px;height:42px;border-radius:10px;display:block;">
+    <span class="logo-name">Cash App</span>
+  </div>
+
+  <div class="s1-mid">
+    <div class="s1-badge">
+      <div class="s1-dot"></div>
+      <span class="s1-badge-txt">Limited Drop</span>
+    </div>
+
+    <h1 class="s1-h1">Have you claimed your <em>$750</em> CashApp reward yet?</h1>
+    <p class="s1-sub">Answer below to see if you still qualify.</p>
+
+    <div class="s1-btns">
+      <button class="btn btn-no" onclick="goP2()">No, Claim My $750</button>
+      <button class="btn btn-yes" onclick="goP2()">Yes, Continue Anyways</button>
+    </div>
+
+    <p class="s1-fine">Free to participate &middot; Under 5 minutes</p>
+  </div>
+
+  <div class="foot">
+    <span>Cash App &times; Rewards</span>
+  </div>
+
+</div>
+
+<!-- ═══════════ PAGE 2 ═══════════ -->
+<div class="screen" id="s2">
+
+  <div class="logo" style="margin-bottom:38px;">
+    <img src="data:image/webp;base64,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" alt="Cash App" style="width:42px;height:42px;border-radius:10px;display:block;">
+    <span class="logo-name">Cash App</span>
+  </div>
+
+  <div class="badge">You're Eligible</div>
+
+  <h1>Claim your <em>CashApp</em><br>reward</h1>
+
+  <p class="sub">Follow the 4 steps to receive your <b>$750</b>.</p>
+
+  <div class="steps">
+    <div class="step">
+      <div class="num">1</div>
+      <div class="stitle">Answer questions</div>
+      <div class="sdesc">Quick eligibility survey.</div>
+      <div class="slabel">~30 seconds</div>
+    </div>
+    <div class="step">
+      <div class="num">2</div>
+      <div class="stitle">Basic details</div>
+      <div class="sdesc">Name &amp; email.</div>
+      <div class="slabel">Secure &amp; private</div>
+    </div>
+    <div class="step">
+      <div class="num">3</div>
+      <div class="stitle">Complete 2&ndash;3 deals</div>
+      <div class="sdesc">Unlock your reward.</div>
+      <div class="slabel">Most important</div>
+    </div>
+    <div class="step">
+      <div class="num">4</div>
+      <div class="stitle">Get paid &amp; shop</div>
+      <div class="sdesc">$750 CashApp reward.</div>
+      <div class="slabel">Spend anywhere</div>
+    </div>
+  </div>
+
+  <div class="cta-wrap">
+    <a class="cta" href="https://trksy.org/aff_c?offer_id=1145&amp;aff_id=187598">Continue Now</a>
+  </div>
+  <p class="cta-note">Free to participate &bull; Sponsored offer</p>
+
+  <div class="proof">
+    <div class="stars-row">
+      <div class="stars">
+        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+      </div>
+      <span class="rcount">4.9/5 from 12,000+ reviews</span>
+    </div>
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+      <div class="rcard">
+        <p class="rq">&ldquo;Literally got my CashApp reward same day. Crazy easy.&rdquo;</p>
+        <p class="ra">Tiffany L. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;Thought it was fake at first but I actually got paid. Wild.&rdquo;</p>
+        <p class="ra">Marcus J. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;Did it in my lunch break. $750 straight to Cash App.&rdquo;</p>
+        <p class="ra">Destiny R. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;Took me like 20 mins. Already spent it on Amazon lol.&rdquo;</p>
+        <p class="ra">Kevin T. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;My friend told me about this. Wish I did it sooner.&rdquo;</p>
+        <p class="ra">Aaliyah S. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;Super simple, just follow the steps. 100% real.&rdquo;</p>
+        <p class="ra">Jordan W. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;I was skeptical but everything went smoothly. Love it.&rdquo;</p>
+        <p class="ra">Priya N. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;Completed the deals in one evening. Funds hit overnight.&rdquo;</p>
+        <p class="ra">Tyler B. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;Did this while watching Netflix. Easy money honestly.&rdquo;</p>
+        <p class="ra">Jasmine C. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;Third time doing one of these offers. Always delivers.&rdquo;</p>
+        <p class="ra">Chris M. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;My sister and I both did it. Both got paid. No cap.&rdquo;</p>
+        <p class="ra">Amber K. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;Customer support was fast when I had a question. Legit.&rdquo;</p>
+        <p class="ra">DeShawn P. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;Surprised how quick it was. Recommend to everyone.&rdquo;</p>
+        <p class="ra">Sofia L. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;Used it on my order straight away. No issues at all.&rdquo;</p>
+        <p class="ra">Brittany M. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;Literally got my CashApp reward same day. Crazy easy.&rdquo;</p>
+        <p class="ra">Tiffany L. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;Thought it was fake at first but I actually got paid. Wild.&rdquo;</p>
+        <p class="ra">Marcus J. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;Did it in my lunch break. $750 straight to Cash App.&rdquo;</p>
+        <p class="ra">Destiny R. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;Took me like 20 mins. Already spent it on Amazon lol.&rdquo;</p>
+        <p class="ra">Kevin T. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;My friend told me about this. Wish I did it sooner.&rdquo;</p>
+        <p class="ra">Aaliyah S. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;Super simple, just follow the steps. 100% real.&rdquo;</p>
+        <p class="ra">Jordan W. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;I was skeptical but everything went smoothly. Love it.&rdquo;</p>
+        <p class="ra">Priya N. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;Completed the deals in one evening. Funds hit overnight.&rdquo;</p>
+        <p class="ra">Tyler B. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;Did this while watching Netflix. Easy money honestly.&rdquo;</p>
+        <p class="ra">Jasmine C. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;Third time doing one of these offers. Always delivers.&rdquo;</p>
+        <p class="ra">Chris M. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;My sister and I both did it. Both got paid. No cap.&rdquo;</p>
+        <p class="ra">Amber K. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;Customer support was fast when I had a question. Legit.&rdquo;</p>
+        <p class="ra">DeShawn P. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;Surprised how quick it was. Recommend to everyone.&rdquo;</p>
+        <p class="ra">Sofia L. &mdash; verified</p>
+      </div>
+      <div class="rcard">
+        <p class="rq">&ldquo;Used it on my order straight away. No issues at all.&rdquo;</p>
+        <p class="ra">Brittany M. &mdash; verified</p>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>Cash App &times; Rewards</span>
+  </div>
+
+</div>
+
+<script>
+function goP2(){
+  var s1=document.getElementById('s1');
+  var s2=document.getElementById('s2');
+  s1.style.cssText='opacity:0;transition:opacity .3s ease;display:flex;';
+  setTimeout(function(){
+    s1.classList.remove('active');
+    s1.style.cssText='';
+    s2.classList.add('active');
+    window.scrollTo(0,0);
+  },300);
+}
+</script>
+</body>
+</html>
